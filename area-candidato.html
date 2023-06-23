@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Candidato</title>
+    <style>
+        body{
+            background-color: rgb(192, 168, 214);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <figure>
+            <a href="index.html">
+            <img src="imagens/icons8-lawyer-64.png" alt="logo">
+            </a>
+            <figcaption>Alma Associados</figcaption>
+        </figure>
+    </div>
+    <div id="menu-principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="vagas.html">Vagas</a></li>
+            <li><a href="parcerias.html">Parcerias</a></li>
+            <li><a href="area-candidato.html">Área do Candidato</a></li>
+        </ul>
+    </div>
+    <div class="conteudo">
+        <h1>Área de Candidato</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações de contato:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira de Nome" size="50" maxlength="100" autofocus autocomplete="off">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu E-mail" size="50" maxlength="100" autocomplete="off">
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" placeholder="_____-____" size="49" maxlength="14" autocomplete="off">
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>Informações do Candidato</legend>
+            <label for="pretSalarial">Pretenção salarial:</label>
+            <input type="text" id="pretSalarial" name="pretSalarial" placeholder="R$ 0000,00" size="50" maxlength="10" autocomplete="off">
+            <label for="dataNasc">Data de Nascimento:</label>
+            <input type="date" id="dataNasc" name="dataNasc">
+            <label for="escolaridade">Escolaridade:</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="#">--</option>
+                <option value="fundamental">Fundamental</option>
+                <option value="tecnico">Técnico</option>
+                <option value="tecnologo">Tecnologo</option>
+                <option value="bacharel">Bacharel</option>
+                <option value="posGraduacao">Pós Graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>   
+            </select>
+            <input type="radio" name="sexo" id="fem" value="fem">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="masc" value="masc">
+            <label for="masc">Masculino</label>
+            <label for="fale">Fale sobre você:</label>
+            <textarea name="fale" id="fale" cols="10" rows="2" style="resize: none;"></textarea>
+
+        </fieldset>
+    </div>
+</body>
+</html>
